@@ -1,5 +1,6 @@
 package com.example.fivescoreapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +13,8 @@ class GameClear : AppCompatActivity() {
         val btnReplay:Button=findViewById(R.id.btnReplay)
 
         btnReplay.setOnClickListener {
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }
